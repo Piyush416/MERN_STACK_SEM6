@@ -1,0 +1,129 @@
+body
+{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+.drop-down
+{
+    display: block;
+    overflow: hidden;
+    max-width: 100px;
+}
+
+.drop-content
+{
+    display: none;
+    visibility: hidden;
+}
+
+.drop-btn
+{
+    width: 100%;
+    padding: 5px 2px;
+    height: 43px;
+}
+
+.drop-btn:hover
+{
+    background-color: darkgrey;
+    /* border: none; */
+}
+
+.drop-content option
+{
+    display: block;
+    padding: 2px;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid darkgray;
+    color: black;
+    text-decoration: none;
+}
+
+.drop-down:hover .drop-content
+{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+}
+
+.drop-content option:hover 
+{
+    background-color: darkgrey;
+    color: black;
+    /* border: 1px solid lightgrey; */
+}
+
+
+.header-right
+{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+} 
+
+
+/* Header content*/
+
+.header
+{
+    background-color: rgb(247, 215, 220);
+    width: 100%;
+    /* height: 28px; */
+}
+
+.heading
+{
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+
+}
+
+
+/* Footer */
+
+.footer
+{
+    position: static;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(247, 215, 220);
+}
+
+.container
+{
+    width: 100%;
+}
+
+/* cards */
+
+.cards
+{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.items 
+{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items img
+{
+    width: 100%;
+    padding: 0 20px;
+}
